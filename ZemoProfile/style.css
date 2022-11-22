@@ -1,0 +1,19 @@
+body {
+  background-color: #eeeeee;
+}
+img {
+  border-radius: 50%; /*for circular image */
+}
+hr {
+  background-color: white;
+  border-style: dotted none none none;
+  border-width: 5px;
+  width: 5%;
+}
+h3 {
+  color: #00adb5;
+}
+a {
+  color: red;
+  text-decoration: none;
+}
