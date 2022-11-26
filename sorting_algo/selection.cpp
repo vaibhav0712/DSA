@@ -28,7 +28,7 @@ void display(int arr[], int len)
 }
 int main()
 {
-    int arr[] = {10, 4, 6, 2, 3, 1, 100, 99, 56, 23, 11, 5};
+    int arr[] = {10, 4, 6, 2, 2, 3, 1, 100, 99, 56, 10, 23, 11, 5};
     int len = sizeof(arr) / sizeof(arr[0]);
     display(arr, len);
     sort(arr, len);
