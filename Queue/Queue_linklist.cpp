@@ -84,7 +84,9 @@ int main()
     dequeue();
     dequeue();
     dequeue();
-    dequeue();
     display();
+
+    // dequeue();
+    // display();
     return 0;
 }
