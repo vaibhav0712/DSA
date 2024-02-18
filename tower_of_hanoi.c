@@ -10,7 +10,7 @@ void toh(int n, char a, char b, char c)
     {
 
         toh(n - 1, a, c, b);
-        printf("%d moved from %c to %c \n", n, a, c);
+        printf("disk %d move from %c to %c \n", n, a, c);
         toh(n - 1, b, a, c);
     }
 }

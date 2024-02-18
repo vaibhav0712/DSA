@@ -94,6 +94,7 @@ int BinarySearch(struct Array *arr, int key) // function for binary search
             h = mid - 1;
         }
     }
+
     return -1;
 }
 

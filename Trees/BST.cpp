@@ -6,20 +6,19 @@ struct node
     int data;
     struct node *rchild;
 } *root = NULL;
+
 void Insert(int key)
 {
     struct node *t = root;
     struct node *r, *p;
+    p = new node;
+    p->data = key;
+    p->lchild = p->rchild = NULL;
     if (root == NULL)
     {
-        // cout << "\nRoot Creat ";
-        p = new node;
-        p->data = key;
-        p->lchild = p->rchild = NULL;
         root = p;
     }
     t = root;
-    // cout << t;
     while (t != NULL) // go to that pos
     {
         r = t;
@@ -33,18 +32,13 @@ void Insert(int key)
         }
         else
         {
-            // cout << "Exit ";
             return;
         }
     }
-    p = new node;
-    p->data = key;
-    p->lchild = p->rchild = NULL;
     if (key < r->data)
         r->lchild = p;
     else
         r->rchild = p;
-    // cout << p->data << " left : " << p->lchild << " Right : " << p->rchild;
 }
 void Inorder(struct node *p)
 {
